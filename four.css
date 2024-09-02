@@ -1,0 +1,136 @@
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Font-size: 15px;
+
+}
+
+body{
+    font-size: var(--Font-size);
+    background-color: var(--Very-Light-Gray);
+
+}
+
+
+
+.top-text {
+    text-align: center;
+    padding: 1vh 1vw;
+}
+
+.top-text p {
+    width: 33vw;
+    margin: 1vh 31vw;
+    padding: 1vh 1vw;
+}
+
+.first{
+    font-weight: normal;
+}
+
+h1{
+    color: var(--Very-Dark-Blue);
+}
+
+p{
+    color: var(--Grayish-Blue);
+}
+
+.Supervisor, .Team, .Karma, .Calculator {
+    background-color: #fff;
+    height: auto;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.planning {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.te-ma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.top-color {
+    height: 0.5vh;
+}
+
+.Supervisor .top-color {
+
+    background-color: var(--Cyan);
+}
+
+.Team .top-color{
+
+    background-color: var(--Red);
+}
+
+.Karma .top-color{
+
+    background-color: var(--Orange);
+}
+
+.Calculator .top-color{
+    background-color: var(--Blue);
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 1vh 2vw;
+}
+
+.cards img {
+    margin-left: 14vw;
+    padding: 1vh 0vw;
+}
+
+.planning p {
+    width: 19vw;
+    margin-top: -1vh;
+}
+
+@media screen and (max-width:767px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .planning {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .planning,
+    .te-ma{
+        gap: 2vh;
+    }
+
+    .top-text p {
+        width: 69vw;
+        margin: 1vh 10vw;
+    }
+
+    .planning p {
+        width: 62vw;
+    }
+
+    .cards img {
+        margin-left: 50vw;
+    }
+    
+}
+
